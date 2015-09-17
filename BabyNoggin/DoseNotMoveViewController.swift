@@ -55,6 +55,6 @@ class DoseNotMoveViewController: UIViewController {
     */
     @IBAction func CmdBack(sender: AnyObject) {
         // back action performed
-        // TODO
+         navigationController?.popViewControllerAnimated(true)
     }
 }

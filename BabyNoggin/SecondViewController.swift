@@ -37,5 +37,11 @@ class SecondViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func CmdBack(sender: AnyObject) {
+        // back action performed
+        navigationController?.popViewControllerAnimated(true)
+    }
+
 }
 

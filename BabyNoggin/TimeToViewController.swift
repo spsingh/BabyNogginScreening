@@ -58,4 +58,10 @@ class TimeToViewController: UIViewController {
     @IBOutlet weak var lblText: UILabel!
     @IBOutlet weak var btnNextStep: UIButton!
     @IBOutlet weak var stepView: UIView!
+    
+    @IBAction func CmdBack(sender: AnyObject) {
+        // back action performed
+        navigationController?.popViewControllerAnimated(true)
+    }
+
 }

@@ -4,6 +4,24 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
+        <!--Item-->
+        <scene sceneID="KIE-4g-bBq">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="qBE-mZ-9d3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="7Bn-N1-ik2"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HTG-rG-J2F">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="2hj-D1-BA3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="boj-lW-eJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-87" y="-447"/>
+        </scene>
         <!--First View-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
@@ -13,7 +31,7 @@
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundThickBottom" translatesAutoresizingMaskIntoConstraints="NO" id="4Vp-92-mGY">
@@ -47,13 +65,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="First View" image="first" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" id="w8l-Vw-6gR"/>
                     <connections>
                         <outlet property="btnNextStep" destination="wJJ-RR-wLH" id="hze-V0-npR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="178" y="-308"/>
+            <point key="canvasLocation" x="372" y="-602"/>
         </scene>
         <!--Time To View Controller-->
         <scene sceneID="fkH-rH-pV8">
@@ -160,7 +179,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="9pv-A4-QxB" kind="presentation" modalTransitionStyle="crossDissolve" id="vTf-dZ-sg7"/>
+                                    <action selector="CmdBack:" destination="ImF-LK-3vO" eventType="touchUpInside" id="d0a-ah-gDk"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="rolling front to back" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OuI-Ge-XLx">
@@ -245,7 +264,6 @@
                                 </state>
                                 <connections>
                                     <action selector="CmdBack:" destination="cI5-Eg-Sl3" eventType="touchUpInside" id="JQs-OX-8K3"/>
-                                    <segue destination="ImF-LK-3vO" kind="presentation" modalTransitionStyle="crossDissolve" id="SHg-WJ-hsY"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rp8-OF-mKM">
@@ -411,13 +429,13 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="qBE-mZ-9d3" kind="relationship" relationship="viewControllers" id="ymf-g7-DiC"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-312" y="-22"/>
+            <point key="canvasLocation" x="-440" y="238"/>
         </scene>
         <!--Good Job View Controller-->
         <scene sceneID="i1W-Ib-bHT">
@@ -459,7 +477,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="cI5-Eg-Sl3" kind="presentation" modalTransitionStyle="crossDissolve" id="Q2V-uN-1Bn"/>
+                                    <action selector="CmdBack:" destination="bSo-0V-7qm" eventType="touchUpInside" id="ciL-VR-d2F"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="rolling front to back" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIt-o9-3Gt">
@@ -554,7 +572,6 @@
                                 </state>
                                 <connections>
                                     <action selector="CmdBack:" destination="IJX-VN-RjB" eventType="touchUpInside" id="bqQ-Yt-xwZ"/>
-                                    <segue destination="cI5-Eg-Sl3" kind="presentation" modalTransitionStyle="crossDissolve" id="ARi-aH-GfC"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="infographic" translatesAutoresizingMaskIntoConstraints="NO" id="Ar9-n3-Jag">
@@ -577,15 +594,12 @@
     <resources>
         <image name="back" width="128" height="128"/>
         <image name="backgroundThickBottom" width="640" height="1136"/>
-        <image name="first" width="30" height="30"/>
+        <image name="first" width="22" height="23"/>
         <image name="infographic" width="310" height="124"/>
-        <image name="second" width="30" height="30"/>
+        <image name="second" width="25" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="SHg-WJ-hsY"/>
-        <segue reference="ARi-aH-GfC"/>
-        <segue reference="LpN-ML-irm"/>
         <segue reference="qkt-uR-Asc"/>
-        <segue reference="vTf-dZ-sg7"/>
+        <segue reference="LpN-ML-irm"/>
     </inferredMetricsTieBreakers>
 </document>
