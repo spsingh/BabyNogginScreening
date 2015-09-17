@@ -10,37 +10,52 @@ import UIKit
 
 class TimeToViewController: UIViewController {
     
-
-    @IBOutlet weak var stepView: UIView!
+   /*!
+    @brief Initilizes the view after load.
     
-var myMutableString = NSMutableAttributedString()
+    @discussion
+    
+    @param  None
+    
+    @return None.
+    */
     override func viewDidLoad() {
         super.viewDidLoad()
-           }
-
+    }
+    
+    /*!
+    @brief Override any memory warning from the os to handle memory crunches.
+    
+    @discussion Called by the os when memory is being reclaimed
+    
+    @param
+    
+    @return None.
+    */
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     
+    /*!
+    @brief Initilizes the view before load.
+    
+    @discussion
+    
+    @param  None
+    
+    @return None.
+    */
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         stepView.layer.cornerRadius=8
         btnNextStep.layer.cornerRadius=6
-       
+        
     }
+    
+    // Outlets
     @IBOutlet weak var lblText: UILabel!
     @IBOutlet weak var btnNextStep: UIButton!
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    @IBOutlet weak var stepView: UIView!
 }

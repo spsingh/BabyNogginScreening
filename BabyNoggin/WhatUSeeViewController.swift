@@ -10,12 +10,21 @@ import UIKit
 
 class WhatUSeeViewController: UIViewController {
 
+    // Outlets
     @IBOutlet weak var lblBabyTurn: UILabel!
     @IBOutlet weak var lblUnableLift: UILabel!
     @IBOutlet weak var lblMoveArm: UILabel!
     @IBOutlet weak var lblNotMoveArm: UILabel!
    
+    /*!
+    @brief Initilizes the view after load.
     
+    @discussion
+    
+    @param  None
+    
+    @return None.
+    */
     override func viewDidLoad() {
         super.viewDidLoad()
         lblBabyTurn.layer.masksToBounds=true
@@ -29,20 +38,46 @@ class WhatUSeeViewController: UIViewController {
        
     }
 
+    /*!
+    @brief Override any memory warning from the os to handle memory crunches.
+    
+    @discussion Called by the os when memory is being reclaimed
+    
+    @param
+    
+    @return None.
+    */
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
     }
     
+    /*!
+    @brief Initilizes the view before load.
+    
+    @discussion
+    
+    @param  None
+    
+    @return None.
+    */
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
        
     }
+    
+    /*!
+    @brief Handles the back action.
+    
+    @discussion
+    
+    @param  None
+    
+    @return None.
+    */
     @IBAction func CmdBack(sender: AnyObject) {
         // back action performed
         navigationController?.popViewControllerAnimated(true)
         
     }
-  
-
 }

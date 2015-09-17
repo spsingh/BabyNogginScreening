@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundThickBottom" translatesAutoresizingMaskIntoConstraints="NO" id="4Vp-92-mGY">
@@ -350,6 +350,9 @@
                                     <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="IJX-VN-RjB" kind="show" id="LpN-ML-irm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGm-bt-IkO">
                                 <rect key="frame" x="36" y="289" width="249" height="62"/>
@@ -359,6 +362,9 @@
                                     <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="bSo-0V-7qm" kind="show" id="qkt-uR-Asc"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="rolling front to back" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atn-PG-vVA">
                                 <rect key="frame" x="62" y="16" width="202" height="36"/>
@@ -391,7 +397,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TfT-l6-b9l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="557" y="486"/>
+            <point key="canvasLocation" x="553" y="524"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -551,6 +557,9 @@
                                     <segue destination="cI5-Eg-Sl3" kind="presentation" modalTransitionStyle="crossDissolve" id="ARi-aH-GfC"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="infographic" translatesAutoresizingMaskIntoConstraints="NO" id="Ar9-n3-Jag">
+                                <rect key="frame" x="40" y="121" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -569,11 +578,14 @@
         <image name="back" width="128" height="128"/>
         <image name="backgroundThickBottom" width="640" height="1136"/>
         <image name="first" width="30" height="30"/>
+        <image name="infographic" width="310" height="124"/>
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YB9-Ya-5YE"/>
+        <segue reference="SHg-WJ-hsY"/>
+        <segue reference="ARi-aH-GfC"/>
+        <segue reference="LpN-ML-irm"/>
+        <segue reference="qkt-uR-Asc"/>
         <segue reference="vTf-dZ-sg7"/>
-        <segue reference="vHQ-6l-eCO"/>
     </inferredMetricsTieBreakers>
 </document>
