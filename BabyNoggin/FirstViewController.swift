@@ -26,7 +26,7 @@ class FirstViewController: UIViewController {
         let path = NSBundle.mainBundle().pathForResource("rolling back to front-13 month", ofType:"mp4")
         let url = NSURL.fileURLWithPath(path!)
         self.playVideo(url!) // Play Video
-        btnNextStep.layer.cornerRadius=4
+        btnNextStep.layer.cornerRadius=6
         
     }
     

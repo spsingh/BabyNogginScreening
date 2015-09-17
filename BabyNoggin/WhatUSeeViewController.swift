@@ -1,5 +1,5 @@
 //
-//  TimeToViewController.swift
+//  WhatUSeeViewController.swift
 //  BabyNoggin
 //
 //  Created by OSX on 17/09/15.
@@ -8,31 +8,36 @@
 
 import UIKit
 
-class TimeToViewController: UIViewController {
-    
+class WhatUSeeViewController: UIViewController {
 
-    @IBOutlet weak var stepView: UIView!
+    @IBOutlet weak var lblBabyTurn: UILabel!
+    @IBOutlet weak var lblUnableLift: UILabel!
+    @IBOutlet weak var lblMoveArm: UILabel!
+    @IBOutlet weak var lblNotMoveArm: UILabel!
+   
     
-var myMutableString = NSMutableAttributedString()
     override func viewDidLoad() {
         super.viewDidLoad()
-           }
+        lblBabyTurn.layer.masksToBounds=true
+        lblUnableLift.layer.masksToBounds=true
+        lblMoveArm.layer.masksToBounds=true
+        lblNotMoveArm.layer.masksToBounds=true
+        lblBabyTurn.layer.cornerRadius=8
+        lblUnableLift.layer.cornerRadius=8
+        lblMoveArm.layer.cornerRadius=8
+        lblNotMoveArm.layer.cornerRadius=8
+        // Do any additional setup after loading the view.
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        stepView.layer.cornerRadius=8
-        btnNextStep.layer.cornerRadius=6
        
     }
-    @IBOutlet weak var lblText: UILabel!
-    @IBOutlet weak var btnNextStep: UIButton!
-
     /*
     // MARK: - Navigation
 
