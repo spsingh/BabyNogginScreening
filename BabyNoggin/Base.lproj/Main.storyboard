@@ -4,11 +4,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="KIE-4g-bBq">
             <objects>
                 <navigationController navigationBarHidden="YES" id="qBE-mZ-9d3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="7Bn-N1-ik2"/>
+                    <tabBarItem key="tabBarItem" title="" image="pie-bar-icon2" id="7Bn-N1-ik2"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HTG-rG-J2F">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -202,7 +202,7 @@
             </objects>
             <point key="canvasLocation" x="848" y="-343"/>
         </scene>
-        <!--Second-->
+        <!--Second View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="BabyNoggin" customModuleProvider="target" sceneMemberID="viewController">
@@ -214,15 +214,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="55" y="263" width="210" height="42"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
+                                <rect key="frame" x="55" y="264" width="210" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="52" y="313" width="216" height="17"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
+                                <rect key="frame" x="52" y="314" width="216" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -236,11 +236,11 @@
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="" image="pie-bar-icon2" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="178" y="382"/>
+            <point key="canvasLocation" x="-21" y="379"/>
         </scene>
         <!--WhatU See View Controller-->
         <scene sceneID="ZYS-cW-QLV">
@@ -431,11 +431,14 @@
                     <connections>
                         <segue destination="qBE-mZ-9d3" kind="relationship" relationship="viewControllers" id="ymf-g7-DiC"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="NW2-Ux-B5b" kind="relationship" relationship="viewControllers" id="HYV-9L-nZB"/>
+                        <segue destination="J80-Ps-naT" kind="relationship" relationship="viewControllers" id="EaL-GR-Mb5"/>
+                        <segue destination="4ml-fi-dau" kind="relationship" relationship="viewControllers" id="e5A-t6-F9J"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-440" y="238"/>
+            <point key="canvasLocation" x="-627" y="233"/>
         </scene>
         <!--Good Job View Controller-->
         <scene sceneID="i1W-Ib-bHT">
@@ -590,13 +593,136 @@
             </objects>
             <point key="canvasLocation" x="1623" y="661"/>
         </scene>
+        <!--Second View Controller-->
+        <scene sceneID="MsI-zR-aMg">
+            <objects>
+                <viewController id="NW2-Ux-B5b" customClass="SecondViewController" customModule="BabyNoggin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kfo-Os-GzQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="jcb-pG-4bq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oue-dj-XiV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="y7t-RJ-85U">
+                                <rect key="frame" x="55" y="264" width="210" height="42"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSF-yk-gsl">
+                                <rect key="frame" x="52" y="314" width="216" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="y7t-RJ-85U" secondAttribute="centerX" id="423-UA-Oz5"/>
+                            <constraint firstItem="lSF-yk-gsl" firstAttribute="centerX" secondItem="y7t-RJ-85U" secondAttribute="centerX" id="8lZ-SI-dvB"/>
+                            <constraint firstItem="lSF-yk-gsl" firstAttribute="top" secondItem="y7t-RJ-85U" secondAttribute="bottom" constant="8" symbolic="YES" id="LsM-er-LrD"/>
+                            <constraint firstAttribute="centerY" secondItem="y7t-RJ-85U" secondAttribute="centerY" id="jKB-uk-0w7"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="pie-bar-icon2" id="Evs-Sw-MSG"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0g2-6E-bzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-651" y="1419"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="cBV-k5-JaC">
+            <objects>
+                <viewController id="J80-Ps-naT" customClass="SecondViewController" customModule="BabyNoggin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lwK-XY-xc4"/>
+                        <viewControllerLayoutGuide type="bottom" id="6rd-rE-37q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Anl-bQ-C5e">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="fap-6j-t2W">
+                                <rect key="frame" x="55" y="264" width="210" height="42"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXO-SB-9w2">
+                                <rect key="frame" x="52" y="314" width="216" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="fap-6j-t2W" secondAttribute="centerY" id="pwN-fU-nZn"/>
+                            <constraint firstItem="aXO-SB-9w2" firstAttribute="centerX" secondItem="fap-6j-t2W" secondAttribute="centerX" id="sDu-Hv-rln"/>
+                            <constraint firstItem="aXO-SB-9w2" firstAttribute="top" secondItem="fap-6j-t2W" secondAttribute="bottom" constant="8" symbolic="YES" id="vHX-9N-0V5"/>
+                            <constraint firstAttribute="centerX" secondItem="fap-6j-t2W" secondAttribute="centerX" id="y91-5i-WG9"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="pie-bar-icon2" id="wRf-br-1Sj"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yzk-5o-Al7" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-209" y="1353"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="trU-Ze-y0X">
+            <objects>
+                <viewController id="4ml-fi-dau" customClass="SecondViewController" customModule="BabyNoggin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="816-Nu-1fr"/>
+                        <viewControllerLayoutGuide type="bottom" id="1VX-eF-u6L"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hfk-MH-VRI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="gxT-rm-oZh">
+                                <rect key="frame" x="55" y="264" width="210" height="42"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqO-yf-r4j">
+                                <rect key="frame" x="52" y="314" width="216" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mqO-yf-r4j" firstAttribute="centerX" secondItem="gxT-rm-oZh" secondAttribute="centerX" id="HEc-CJ-iHG"/>
+                            <constraint firstAttribute="centerX" secondItem="gxT-rm-oZh" secondAttribute="centerX" id="Y4U-U9-CVG"/>
+                            <constraint firstItem="mqO-yf-r4j" firstAttribute="top" secondItem="gxT-rm-oZh" secondAttribute="bottom" constant="8" symbolic="YES" id="oZW-ce-YQ8"/>
+                            <constraint firstAttribute="centerY" secondItem="gxT-rm-oZh" secondAttribute="centerY" id="w6q-qd-Uu3"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="pie-bar-icon2" id="XJH-2C-LsH"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U4z-KQ-V82" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="191" y="1445"/>
+        </scene>
     </scenes>
     <resources>
         <image name="back" width="128" height="128"/>
         <image name="backgroundThickBottom" width="640" height="1136"/>
         <image name="first" width="22" height="23"/>
         <image name="infographic" width="310" height="124"/>
-        <image name="second" width="25" height="20"/>
+        <image name="pie-bar-icon2" width="29" height="29"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="qkt-uR-Asc"/>
