@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Make the transparent tabbar
         UITabBar.appearance().barTintColor = UIColor.clearColor()
         UITabBar.appearance().backgroundImage=UIImage.new()
+        UITabBar.appearance().shadowImage=UIImage.new()
         return true
     }
 
